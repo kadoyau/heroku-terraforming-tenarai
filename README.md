@@ -3,6 +3,8 @@ terraformを使って[herokuのチュートリアル](https://devcenter.heroku.c
 
 ## 実行
 ```zsh
+git clone git@github.com:kadoyau/heroku-terraforming-tenarai.git
+cd heroku-terraforming-tenarai
 terraform apply
 terraform show
 # git_url = https://git.heroku.com/heroku-terraforming-tenarai.git
