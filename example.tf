@@ -8,6 +8,9 @@ provider "heroku" {
 resource "heroku_app" "default" {
   name = "heroku-terraforming-tenarai"
   region = "us"
+  config_vars {
+    REPEAT = "${var.repeat}"
+  }
 }
 
 resource "heroku_addon" "database" {
