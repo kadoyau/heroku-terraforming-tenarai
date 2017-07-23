@@ -4,7 +4,10 @@ terraformを使って[herokuのチュートリアル](https://devcenter.heroku.c
 ## 実行
 ```zsh
 git clone git@github.com:kadoyau/heroku-terraforming-tenarai.git
+git submodule update --init
 cd heroku-terraforming-tenarai
+heroku auth:token
+# check your token
 terraform apply
 terraform show
 # git_url = https://git.heroku.com/heroku-terraforming-tenarai.git
@@ -12,4 +15,7 @@ cd go-getting-started
 git remote add heroku https://git.heroku.com/heroku-terraforming-tenarai.git
 git push heroku master
 heroku open db
+# reload!
+cd ..
+terraform destroy
 ```
