@@ -3,6 +3,7 @@ terraformを使って[herokuのチュートリアル](https://devcenter.heroku.c
 
 ## 実行
 ```zsh
+cd $GOPATH/src/github.com/YOUR_NAME
 git clone git@github.com:kadoyau/heroku-terraforming-tenarai.git
 git submodule update --init
 cd heroku-terraforming-tenarai
